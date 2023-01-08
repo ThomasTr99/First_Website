@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!--Standard Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS
+    with a reference to the bootstrap css file that has all the css classes that I am using-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -96,6 +103,12 @@
         </div>
     </footer>
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. 
+    This order is important because we would like to load the pretty things first before we load the javascript
+    stuff becuase the js stuff takes longer to render in than the textures and whatnot-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
