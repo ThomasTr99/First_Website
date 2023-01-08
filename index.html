@@ -9,6 +9,7 @@
     <!--Bootstrap CSS
     with a reference to the bootstrap css file that has all the css classes that I am using-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -18,7 +19,7 @@
     col(columns) let the text know how to occupy a screen as the screen size changes for each device that is seeing it-->
     <header class="jumbotron">
         <div class="container">
-            <div class="row">
+            <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
@@ -30,7 +31,7 @@
     </header>
 
     <div class="container">
-        <div class="row">
+        <div class="row row-content align-items-center">
             <!--col-12 will occupy the entire screen, col-sm-4 will occupy 4 columns and col-md-3 will occupy 3 columns-->
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -45,7 +46,7 @@
         </div>
 
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
@@ -55,7 +56,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -67,13 +68,13 @@
         </div>
     </div>
 
-    <footer >
+    <footer class="footer">
         <div class="container">
             <div class="row">      
                 <!--offset-1 will occupy the remaining 1 space that is taken up by col-4 and col-7-->       
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -91,8 +92,8 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -103,7 +104,7 @@
                 </div>
            </div>
            <div class="row">             
-                <div class="col-auto">
+                <div class="col-auto justify-content-center">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
            </div>
