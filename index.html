@@ -15,9 +15,15 @@
 
 <body>
     <!--navbar-dark makes it dark and navbar-expand-sm will make it epxand on smaller screen sizes, fixed-top keeps the navbar at the top as you scroll down-->
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top"> 
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top"> 
         <div class="container">
-            <a class="navbar-brand" href="index.html"> Ristorante Con Fusion </a>
+            <!--This button tag shows a button that allows me to toggle the navbar bigger or smaller when on a smaller screen. data-toggle is a javascript component in bootstrap that gives the collapse function to the button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="index.html"> Ristorante Con Fusion </a>
+            <!--To specify what I want to collapse with this button, I enclosed the content I want to collapse with a <div> with the corresponding classes-->
+            <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"> <a class="nav-link" href="index.html"> Home </a> </li>
                     <li class="nav-item"> <a class="nav-link" href="about.html"> About </a> </li>
@@ -25,6 +31,7 @@
                     <li class="nav-item"> <a class="nav-link" href="index.html"> Contact </a> </li>
 
                 </ul>
+            </div>
         </div>
     </nav>
 <!--container class and row class help with giving the information in our website structure
@@ -88,8 +95,8 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
